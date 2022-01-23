@@ -11,7 +11,7 @@ services:
       - db
   react:
     build: ./react
-    tty: true
+    command: bash -c "npm run dev"
     ports: 
       - 3000:3000
     volumes:
